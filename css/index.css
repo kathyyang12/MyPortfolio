@@ -74,3 +74,32 @@ img
   border-radius: 5%;
   box-shadow: black 5px 5px 10px, black -5px -5px 10px;
 }
+
+@media screen and (max-width: 421px)
+{
+  body
+  {
+    min-width: 40px;
+  }
+
+  main
+  {
+    min-height: 340px;
+  }
+
+  h1
+  {
+    font-size: 4rem;
+  }
+
+  div > h1
+  {
+    font-size: 3rem;
+  }
+
+  img
+  {
+    max-width: 150px;
+    max-height: 340px;
+  }
+}

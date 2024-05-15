@@ -25,10 +25,6 @@ li, main, nav, nav a, ol, p, section, span, ul {
 
 /* Set the default page element styles */
 
-body {
-   line-height: 1.2em;
-}
-
 ul, ol {
    list-style: none;
 }

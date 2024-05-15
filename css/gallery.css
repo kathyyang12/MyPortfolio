@@ -19,3 +19,18 @@ img
   border-radius: 5%;
   box-shadow: gray 5px 5px 5px, gray -5px -5px 5px;
 }
+
+@media screen and (max-width: 421px)
+{
+  section
+  {
+    flex-flow: column;
+    align-items: center;
+  }
+
+  img
+  {
+    max-width: 300px;
+    max-height: 250px;
+  }
+}

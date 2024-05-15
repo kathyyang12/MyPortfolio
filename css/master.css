@@ -32,6 +32,18 @@ html
   background-color:aliceblue;
 }
 
+body
+{
+  max-width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+header
+{
+  border-bottom: 1px solid black;
+}
+
 h1, h2, h3, h4, h5, h6
 {
   margin: 5px;
@@ -42,7 +54,6 @@ h2, h3, h4, h5, h6
 {
   margin: 5px;
   padding: 5px;
-  font-family: Lobster, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 h1
@@ -55,6 +66,17 @@ h1
 h2
 {
   font-size: 2rem;
+  font-family: Lobster, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h3
+{
+  font-size: 1.5rem;
+}
+
+h4
+{
+  font-size: 1rem;
 }
 
 header, main, section, footer
@@ -79,4 +101,43 @@ footer nav a
   padding: 5px;
   border-radius: 25%;
   background-color: turquoise;
+  width: 135px;
+  text-align: center;
+}
+
+img.full
+{
+  cursor: pointer;
+}
+
+@media screen and (max-width: 421px)
+{
+  html
+  {
+    font-size: 12px;
+  }
+
+  h1, h2, h3, h4, h5, h6
+  {
+    text-align: center;
+  }
+
+  footer nav
+  {
+    flex-flow: column;
+  }
+
+  footer nav a
+  {
+    border-radius: 0%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px)
+{
+  body
+  {
+    max-width: 100%;
+  }
 }
